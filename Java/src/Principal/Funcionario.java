@@ -26,8 +26,14 @@ public class Funcionario {
 		System.out.println("Salario:	" + salario);
 		System.out.println("Setor:	" + setor);
 		System.out.println("Função:	" + funcao);
-		for (int i = 0; i < tel.length; i++) {
-			System.out.println("Telefone " + (i + 1) + ":	" + tel[i]);
+		if(tel[0] != 0) {
+			for (int i = 0; i < tel.length; i++) {
+				System.out.println("Telefone " + (i + 1) + ":	" + tel[i]);
+			}
 		}
+	}
+	
+	public void exibeNome() {
+		System.out.println("Nome:	" + nome);
 	}
 }
