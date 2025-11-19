@@ -11,26 +11,26 @@ public class Principal {
 		
 		while(encerrar) {
 			System.out.println("Bem-vindo ao Sitio-Virtual");
-			System.out.println("-"
-					+ "Digite o número correspondente ao que quer fazer:"
-					+ "(0) Adicionar algo.	"
-					+ "(1) Remover algo.	"
-					+ "(2) Visualizar algo.	"
-					+ "(3) Encerrar.	"
-					+ "-");
+			System.out.println("-------------------------------------------------------\n"
+					+ "Digite o número correspondente ao que quer fazer:\n"
+					+ "(0) Adicionar algo.\n"
+					+ "(1) Remover algo.\n"
+					+ "(2) Visualizar algo.\n"
+					+ "(3) Encerrar.\n"
+					+ "-------------------------------------------------------");
 			
 			switch(ent.nextInt()) {
 			case 0:
 				
-				System.out.println("-"
-						+ "Digite o número correspondente ao que quer fazer:"
-						+ "(0) Adicionar Plantação.	"
-						+ "(1) Adicionar Criadouro.	"
-						+ "(2) Adicionar Funcionário.	"
-						+ "(3) Adicionar Animal.	"
-						+ "(4) Adicionar Cultivo.	"
-						+ "(5) Voltar.	"
-						+ "-");
+				System.out.println("-------------------------------------------------------\n"
+						+ "Digite o número correspondente ao que quer fazer:\n"
+						+ "(0) Adicionar Plantação.\n"
+						+ "(1) Adicionar Criadouro.\n"
+						+ "(2) Adicionar Funcionário.\n"
+						+ "(3) Adicionar Animal.\n"
+						+ "(4) Adicionar Cultivo.\n"
+						+ "(5) Voltar.\n"
+						+ "-------------------------------------------------------");
 				
 				switch(ent.nextInt()) {
 				case 0:
@@ -45,12 +45,12 @@ public class Principal {
 					break;
 				case 2:
 					
-					System.out.println("-"
-							+ "Digite o número correspondente ao que quer fazer:	"
-							+ "(0) Adicionar Funcionário a uma plantação.	"
-							+ "(1) Adicionar Funcionário a um criadouro.	"
-							+ "(2) Voltar.	"
-							+ "-");
+					System.out.println("-------------------------------------------------------\n"
+							+ "Digite o número correspondente ao que quer fazer:\n"
+							+ "(0) Adicionar Funcionário a uma plantação.\n"
+							+ "(1) Adicionar Funcionário a um criadouro.\n"
+							+ "(2) Voltar.\n"
+							+ "-------------------------------------------------------");
 					
 					switch(ent.nextInt()) {
 					case 0:
@@ -115,15 +115,15 @@ public class Principal {
 				break;
 			case 1:
 				
-				System.out.println("-"
-						+ "Digite o número correspondente ao que quer fazer:"
-						+ "(0) Remover Plantação.	"
-						+ "(1) Remover Criadouro.	"
-						+ "(2) Remover Funcionário.	"
-						+ "(3) Remover Animal.	"
-						+ "(4) Remover Cultivo.	"
-						+ "(5) Voltar.	"
-						+ "-");
+				System.out.println("-------------------------------------------------------\n"
+						+ "Digite o número correspondente ao que quer fazer:\n"
+						+ "(0) Remover Plantação.\n"
+						+ "(1) Remover Criadouro.\n"
+						+ "(2) Remover Funcionário.\n"
+						+ "(3) Remover Animal.\n"
+						+ "(4) Remover Cultivo.\n"
+						+ "(5) Voltar.\n"
+						+ "-------------------------------------------------------");
 				
 				switch(ent.nextInt()) {
 				case 0:
@@ -152,12 +152,12 @@ public class Principal {
 					break;
 				case 2:
 					
-					System.out.println("-"
-							+ "Digite o número correspondente ao que quer fazer:	"
-							+ "(0) Remover Funcionário de uma plantação.	"
-							+ "(1) Remover Funcionário de um criadouro.	"
-							+ "(2) Voltar.	"
-							+ "-");
+					System.out.println("-------------------------------------------------------\n"
+							+ "Digite o número correspondente ao que quer fazer:\n"
+							+ "(0) Remover Funcionário de uma plantação.\n"
+							+ "(1) Remover Funcionário de um criadouro.\n"
+							+ "(2) Voltar.\n"
+							+ "-------------------------------------------------------");
 					
 					switch(ent.nextInt()) {
 					case 0:
@@ -250,22 +250,22 @@ public class Principal {
 				break;
 			case 2:
 				
-				System.out.println("-"
-						+ "Digite o número correspondente ao que quer fazer:	"
-						+ "(0) Visualizar Fazenda.	"
-						+ "(1) Visualizar Proprietário.	"
-						+ "(2) Visualizar Plantação.	"
-						+ "(3) Visualizar Criadouro.	"
-						+ "(4) Visualizar Funcionário.	"
-						+ "(5) Visualizar Animais.	"
-						+ "(6) Visualizar Cultivos.	"
-						+ "(7) Visualizar Animal Específico."
-						+ "(8) Visualizar Cultivo Específico."
-						+ "(9) Visualizar Custo Mensal de uma Plantação."
-						+ "(10) Visualizar Custo Mensal de um Criadouro."
-						+ "(11) Visualizar Venda dos Cultivos de uma plantação."
-						+ "(12) Visualizar Venda dos Animais de um Criadouro."
-						+ "-");
+				System.out.println("-------------------------------------------------------\n"
+						+ "Digite o número correspondente ao que quer fazer:\n"
+						+ "(0) Visualizar Fazenda.\n"
+						+ "(1) Visualizar Proprietário.\n"
+						+ "(2) Visualizar Plantação.\n"
+						+ "(3) Visualizar Criadouro.\n"
+						+ "(4) Visualizar Funcionário.\n"
+						+ "(5) Visualizar Animais.\n"
+						+ "(6) Visualizar Cultivos.\n"
+						+ "(7) Visualizar Animal Específico.\n"
+						+ "(8) Visualizar Cultivo Específico.\n"
+						+ "(9) Visualizar Custo Mensal de uma Plantação.\n"
+						+ "(10) Visualizar Custo Mensal de um Criadouro.\n"
+						+ "(11) Visualizar Venda dos Cultivos de uma plantação.\n"
+						+ "(12) Visualizar Venda dos Animais de um Criadouro.\n"
+						+ "-------------------------------------------------------");
 				
 				
 				switch(ent.nextInt()) {
@@ -305,12 +305,12 @@ public class Principal {
 					break;
 				case 4:
 					
-					System.out.println("-"
-							+ "Digite o número correspondente ao que quer fazer:	"
-							+ "(0) Visualizar Funcionário de uma plantação.	"
-							+ "(1) Visualizar Funcionário de um criadouro.	"
-							+ "(2) Voltar.	"
-							+ "-");
+					System.out.println("-------------------------------------------------------\n"
+							+ "Digite o número correspondente ao que quer fazer:\n"
+							+ "(0) Visualizar Funcionário de uma plantação.\n"
+							+ "(1) Visualizar Funcionário de um criadouro.\n"
+							+ "(2) Voltar.\n"
+							+ "-------------------------------------------------------");
 					
 					switch(ent.nextInt()) {
 					case 0:
@@ -499,10 +499,11 @@ public class Principal {
 		
 		System.out.println("Digite a quantidade de números de telefone do proprietário:");
 		int numTel = ent.nextInt();
-		int telProp[] = new int[numTel];
+		String telProp[] = new String[numTel];
 		for(int i = 0; i < numTel; i++) {
 			System.out.println("Digite o " + (i + 1) + "º número:");
-			telProp[i] = ent.nextInt();
+			ent.nextLine();
+			telProp[i] = ent.nextLine();
 		}
 		
 		Proprietario proprietario = new Proprietario(nomeProp, CPFProp, telProp);

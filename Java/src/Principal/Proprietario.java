@@ -3,9 +3,9 @@ package Principal;
 public class Proprietario {
 	private String nome;
 	private int CPF;
-	private int[] tel;
+	private String[] tel;
 	
-	public Proprietario(String nome, int CPF, int[] tel) {
+	public Proprietario(String nome, int CPF, String[] tel) {
 		this.nome = nome;
 		this.CPF = CPF;
 		this.tel = tel;
@@ -14,7 +14,7 @@ public class Proprietario {
 	public void exibe() {
 		System.out.println("Nome:	" + nome);
 		System.out.println("CPF:	" + CPF);
-		if(tel[0] != 0) {
+		if(tel[0] != null) {
 			for (int i = 0; i < tel.length; i++) {
 				System.out.println("Telefone " + (i + 1) + ":	" + tel[i]);
 			}
