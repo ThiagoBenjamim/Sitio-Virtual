@@ -20,4 +20,8 @@ public class Proprietario {
 			}
 		}
 	}
+	
+	public void exibeNome() {
+		System.out.println("Nome:	" + nome);
+	}
 }

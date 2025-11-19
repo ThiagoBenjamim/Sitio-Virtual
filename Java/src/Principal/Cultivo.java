@@ -4,8 +4,8 @@ public class Cultivo {
 	private int ID;
 	private String especie;
 	private String tipoSolo;
-	private double preco;
-	private double custoMensal;
+	protected double preco;
+	protected double custoMensal;
 	
 	public Cultivo(int ID, String especie, String tipoSolo, double preco, double custoMensal) {
 		this.ID = ID;

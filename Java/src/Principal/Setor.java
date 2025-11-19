@@ -3,9 +3,9 @@ package Principal;
 public abstract class Setor {
 	private int ID;
 	private double area;
-	private Funcionario funcionarios[];
+	protected Funcionario funcionarios[];
 	protected int indexFuncionarios;
-	private double custoLocal;
+	protected double custoLocal;
 	
 	public Setor(int ID, double area, Funcionario funcionarios[], double custoLocal) {
 		this.ID = ID;

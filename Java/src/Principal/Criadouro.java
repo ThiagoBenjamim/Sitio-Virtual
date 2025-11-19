@@ -1,7 +1,7 @@
 package Principal;
 
 public class Criadouro extends Setor {
-	private Animal animais[];
+	protected Animal animais[];
 	protected int indexAnimais;
 	
 	public Criadouro(int ID, double area, Funcionario funcionarios[], double custoLocal, Animal animais[]) {
@@ -16,9 +16,31 @@ public class Criadouro extends Setor {
 	}
 	
 	public void exibeAnimais() {
-		for (int i = 0; i < animais.length; i++) {
+		for (int i = 0; i < indexAnimais; i++) {
+			if(animais[i] != null) {
 			System.out.print("Animal " + (i + 1) + ":	");
-			animais[i].exibe();
+			animais[i].exibeNome();
+			}
 		}
+	}
+	
+	public double custoMensalTotal() {
+		double total = custoLocal;
+		for (int i = 0; i < indexAnimais; i++) {
+			if(animais[i] != null) {
+				total += animais[i].custoMensal;
+			}
+		}
+		return total;
+	}
+	
+	public double vendaTotal() {
+		double total = 0;
+		for (int i = 0; i < indexAnimais; i++) {
+			if(animais[i] != null) {
+				total += animais[i].preco;
+			}
+		}
+		return total;
 	}
 }

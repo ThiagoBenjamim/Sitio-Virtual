@@ -4,9 +4,9 @@ public class Fazenda {
 	private String nome;
 	private int CNPJ;
 	private int CEP;
-	private Proprietario proprietario;
-	private Plantacao plantacoes[];
-	private Criadouro criadouros[];
+	protected Proprietario proprietario;
+	protected Plantacao plantacoes[];
+	protected Criadouro criadouros[];
 	protected int indexPlantacoes;
 	protected int indexCriadouros;
 	
@@ -35,7 +35,7 @@ public class Fazenda {
 		System.out.println("Nome:	" + nome);
 		System.out.println("CNPJ:	" + CNPJ);
 		System.out.println("CEP:	" + CEP);
-		proprietario.exibe();
+		proprietario.exibeNome();
 		if(plantacoes[0] != null) {
 			for (int i = 0; i < plantacoes.length; i++) {
 				plantacoes[i].exibe();

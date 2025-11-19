@@ -5,8 +5,8 @@ public class Animal {
 	private int ID;
 	private String especie;
 	private String racao;
-	private double preco;
-	private double custoMensal;
+	protected double preco;
+	protected double custoMensal;
 	
 	public Animal(String nome, int ID, String especie, String racao, double preco, double custoMensal) {
 		this.nome = nome;
@@ -28,5 +28,6 @@ public class Animal {
 	
 	public void exibeNome() {
 		System.out.println("Nome:	" + nome);
+		System.out.println("Especie:	" + especie);
 	}
 }
