@@ -491,7 +491,6 @@ public class Principal {
 		String CEP = ent.nextLine();
 		
 		System.out.println("Digite o nome do proprietário:");
-		ent.nextLine();
 		String nomeProp = ent.nextLine();
 		
 		System.out.println("Digite o CPF do proprietário:");
@@ -499,10 +498,10 @@ public class Principal {
 		
 		System.out.println("Digite a quantidade de números de telefone do proprietário:");
 		int numTel = ent.nextInt();
+		ent.nextLine();
 		String telProp[] = new String[numTel];
 		for(int i = 0; i < numTel; i++) {
 			System.out.println("Digite o " + (i + 1) + "º número:");
-			ent.nextLine();
 			telProp[i] = ent.nextLine();
 		}
 		
@@ -510,9 +509,11 @@ public class Principal {
 		
 		System.out.println("Digite a quantidade máxima de plantações da fazenda:");
 		Plantacao plantacoes[] = new Plantacao[ent.nextInt()];
+		ent.nextLine();
 		
 		System.out.println("Digite a quantidade máxima de criadouros da fazenda:");
 		Criadouro criadouros[] = new Criadouro[ent.nextInt()];
+		ent.nextLine();
 		
 		Fazenda fazenda = new Fazenda(nome, CEP, CNPJ, proprietario, plantacoes, criadouros);
 		
@@ -522,15 +523,19 @@ public class Principal {
 	public static Plantacao leCriaPlantacao(Scanner ent, Fazenda fazenda) {
 		System.out.println("Digite a área da plantação(m²):");
 		double area = ent.nextDouble();
+		ent.nextLine();
 		
 		System.out.println("Digite o número máximo de funcinários dessa Plantação:");
 		Funcionario funcionarios[] = new Funcionario[ent.nextInt()];
+		ent.nextLine();
 		
 		System.out.println("Digite o custo de manutenção do local:");
 		double custoLocal = ent.nextDouble();
+		ent.nextLine();
 		
 		System.out.println("Digite o número máximo de cultivos dessa Plantação:");
 		Cultivo cultivos[] = new Cultivo[ent.nextInt()];
+		ent.nextLine();
 		
 		Plantacao plantacao = new Plantacao(fazenda.indexPlantacoes, area, funcionarios, custoLocal, cultivos);
 		
@@ -540,15 +545,19 @@ public class Principal {
 	public static Criadouro leCriaCriadouro(Scanner ent, Fazenda fazenda) {
 		System.out.println("Digite a área do Criadouro(m²):");
 		double area = ent.nextDouble();
+		ent.nextLine();
 		
 		System.out.println("Digite o número máximo de funcinários desse Criadouro:");
 		Funcionario funcionarios[] = new Funcionario[ent.nextInt()];
+		ent.nextLine();
 		
 		System.out.println("Digite o custo de manutenção do local:");
 		double custoLocal = ent.nextDouble();
+		ent.nextLine();
 		
 		System.out.println("Digite o número máximo de animais desse Criadouro:");
 		Animal animais[] = new Animal[ent.nextInt()];
+		ent.nextLine();
 		
 		Criadouro criadouro = new Criadouro(fazenda.indexCriadouros, area, funcionarios, custoLocal, animais);
 		
@@ -564,6 +573,7 @@ public class Principal {
 		
 		System.out.println("Digite o salário do funcionário:");
 		double salario = ent.nextDouble();
+		ent.nextLine();
 		
 		System.out.println("Digite o setor do funcionário:");
 		String setor2 = ent.nextLine();
@@ -573,11 +583,13 @@ public class Principal {
 		
 		System.out.println("Digite a quantidade de números de telefone do funcionário:");
 		int numTel = ent.nextInt();
+		ent.nextLine();
 		int telFunc[] = new int[numTel];
 		for(int i = 0; i < numTel; i++) {
 			System.out.println("Digite o " + (i + 1) + "º número:");
 			telFunc[i] = ent.nextInt();
 		}
+		ent.nextLine();
 		
 		Funcionario funcionario = new Funcionario(nome, setor.indexFuncionarios, CPF, salario, setor2, funcao, telFunc);
 		
@@ -596,9 +608,11 @@ public class Principal {
 		
 		System.out.println("Digite o preco do animal:");
 		double preco = ent.nextDouble();
+		ent.nextLine();
 		
 		System.out.println("Digite o custo mensal do animal:");
 		double custoMensal = ent.nextDouble();
+		ent.nextLine();
 		
 		Animal animal = new Animal(nome, criadouro.indexAnimais, especie, racao, preco, custoMensal);
 		
@@ -614,9 +628,11 @@ public class Principal {
 		
 		System.out.println("Digite o preco do cultivo:");
 		double preco = ent.nextDouble();
+		ent.nextLine();
 		
 		System.out.println("Digite o custo mensal do cultivo:");
 		double custoMensal = ent.nextDouble();
+		ent.nextLine();
 		
 		Cultivo cultivo = new Cultivo(plantacao.indexCultivos, especie, solo, preco, custoMensal);
 		
