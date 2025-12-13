@@ -485,17 +485,17 @@ public class Principal {
 		String nome = ent.nextLine();
 		
 		System.out.println("Digite o CNPJ da fazenda:");
-		int CNPJ = ent.nextInt();
+		String CNPJ = ent.nextLine();
 		
 		System.out.println("Digite o CEP da fazenda:");
-		int CEP = ent.nextInt();
+		String CEP = ent.nextLine();
 		
 		System.out.println("Digite o nome do proprietário:");
 		ent.nextLine();
 		String nomeProp = ent.nextLine();
 		
 		System.out.println("Digite o CPF do proprietário:");
-		int CPFProp = ent.nextInt();
+		String CPFProp = ent.nextLine();
 		
 		System.out.println("Digite a quantidade de números de telefone do proprietário:");
 		int numTel = ent.nextInt();
@@ -560,7 +560,7 @@ public class Principal {
 		String nome = ent.nextLine();
 		
 		System.out.println("Digite o CPF do funcioário:");
-		int CPF = ent.nextInt();
+		String CPF = ent.nextLine();
 		
 		System.out.println("Digite o salário do funcionário:");
 		double salario = ent.nextDouble();
