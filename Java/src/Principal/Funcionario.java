@@ -7,9 +7,9 @@ public class Funcionario {
 	private double salario;
 	private String setor;
 	private String funcao;
-	private int tel[];
+	private String tel[];
 	
-	public Funcionario(String nome, int ID, String CPF, double salario, String setor, String funcao, int tel[]) {
+	public Funcionario(String nome, int ID, String CPF, double salario, String setor, String funcao, String tel[]) {
 		this.nome = nome;
 		this.ID = ID;
 		this.CPF = CPF;
@@ -26,7 +26,7 @@ public class Funcionario {
 		System.out.println("Salario:	" + salario);
 		System.out.println("Setor:	" + setor);
 		System.out.println("Função:	" + funcao);
-		if(tel[0] != 0) {
+		if(tel[0] != null) {
 			for (int i = 0; i < tel.length; i++) {
 				System.out.println("Telefone " + (i + 1) + ":	" + tel[i]);
 			}
@@ -34,6 +34,6 @@ public class Funcionario {
 	}
 	
 	public void exibeNome() {
-		System.out.println("Nome:	" + nome);
+		System.out.println("Nome do funcionário "+ (ID+1) +":	" + nome);
 	}
 }

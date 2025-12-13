@@ -14,14 +14,14 @@ public class Proprietario {
 	public void exibe() {
 		System.out.println("Nome:	" + nome);
 		System.out.println("CPF:	" + CPF);
-		if(tel[0] != null) {
 			for (int i = 0; i < tel.length; i++) {
-				System.out.println("Telefone " + (i + 1) + ":	" + tel[i]);
+				if(tel[i] != null) {
+					System.out.println("Telefone " + (i + 1) + ":	" + tel[i]);
+				}
 			}
-		}
 	}
 	
 	public void exibeNome() {
-		System.out.println("Nome:	" + nome);
+		System.out.println("Nome do proprietário:	" + nome);
 	}
 }

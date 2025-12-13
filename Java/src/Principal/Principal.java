@@ -521,6 +521,8 @@ public class Principal {
 	}
 	
 	public static Plantacao leCriaPlantacao(Scanner ent, Fazenda fazenda) {
+		ent.nextLine();
+		
 		System.out.println("Digite a área da plantação(m²):");
 		double area = ent.nextDouble();
 		ent.nextLine();
@@ -543,6 +545,8 @@ public class Principal {
 	}
 	
 	public static Criadouro leCriaCriadouro(Scanner ent, Fazenda fazenda) {
+		ent.nextLine();
+		
 		System.out.println("Digite a área do Criadouro(m²):");
 		double area = ent.nextDouble();
 		ent.nextLine();
@@ -565,6 +569,9 @@ public class Principal {
 	}
 	
 	public static Funcionario leCriaFuncionario(Scanner ent, Setor setor) {
+		ent.nextLine();
+		
+		
 		System.out.println("Digite o nome do funcionário:");
 		String nome = ent.nextLine();
 		
@@ -584,12 +591,11 @@ public class Principal {
 		System.out.println("Digite a quantidade de números de telefone do funcionário:");
 		int numTel = ent.nextInt();
 		ent.nextLine();
-		int telFunc[] = new int[numTel];
+		String telFunc[] = new String[numTel];
 		for(int i = 0; i < numTel; i++) {
 			System.out.println("Digite o " + (i + 1) + "º número:");
-			telFunc[i] = ent.nextInt();
+			telFunc[i] = ent.nextLine();
 		}
-		ent.nextLine();
 		
 		Funcionario funcionario = new Funcionario(nome, setor.indexFuncionarios, CPF, salario, setor2, funcao, telFunc);
 		
@@ -597,13 +603,16 @@ public class Principal {
 	}
 	
 	public static Animal leCriaAnimal(Scanner ent, Criadouro criadouro) {
+		ent.nextLine();
+		
+		
 		System.out.println("Digite o nome do animal:");
 		String nome = ent.nextLine();
 		
 		System.out.println("Digite a espécie do animal:");
 		String especie = ent.nextLine();
 		
-		System.out.println("Digite o tipo de espécie do animal:");
+		System.out.println("Digite o tipo de ração do animal:");
 		String racao = ent.nextLine();
 		
 		System.out.println("Digite o preco do animal:");
@@ -620,6 +629,9 @@ public class Principal {
 	}
 	
 	public static Cultivo leCriaCultivo(Scanner ent, Plantacao plantacao) {
+		ent.nextLine();
+		
+		
 		System.out.println("Digite a espécie do cultivo:");
 		String especie = ent.nextLine();
 		

@@ -36,15 +36,5 @@ public class Fazenda {
 		System.out.println("CNPJ:	" + CNPJ);
 		System.out.println("CEP:	" + CEP);
 		proprietario.exibeNome();
-		if(plantacoes[0] != null) {
-			for (int i = 0; i < plantacoes.length; i++) {
-				plantacoes[i].exibe();
-			}
-		}
-		if(criadouros[0] != null) {
-			for (int i = 0; i < criadouros.length; i++) {
-				criadouros[i].exibe();
-			}
-		}
 	}
 }

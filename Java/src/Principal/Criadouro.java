@@ -18,7 +18,7 @@ public class Criadouro extends Setor {
 	public void exibeAnimais() {
 		for (int i = 0; i < indexAnimais; i++) {
 			if(animais[i] != null) {
-			System.out.print("Animal " + (i + 1) + ":	");
+				System.out.print("Animal " + (i + 1) + ":	");
 			animais[i].exibeNome();
 			}
 		}

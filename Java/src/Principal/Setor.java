@@ -24,10 +24,10 @@ public abstract class Setor {
 		System.out.println("ID:	" + ID);
 		System.out.println("Área do local:	" + area);
 		System.out.println("Custo do Local:	" + custoLocal);
-		if(funcionarios[0] != null) {
 			for (int i = 0; i < funcionarios.length; i++) {
-				funcionarios[i].exibeNome();
+				if(funcionarios[i] != null) {
+					funcionarios[i].exibeNome();
+				}
 			}
-		}
 	}
 }
