@@ -3,13 +3,13 @@ package Principal;
 public class Funcionario {
 	private String nome;
 	private int ID;
-	private int CPF;
+	private String CPF;
 	private double salario;
 	private String setor;
 	private String funcao;
 	private int tel[];
 	
-	public Funcionario(String nome, int ID, int CPF, double salario, String setor, String funcao, int tel[]) {
+	public Funcionario(String nome, int ID, String CPF, double salario, String setor, String funcao, int tel[]) {
 		this.nome = nome;
 		this.ID = ID;
 		this.CPF = CPF;

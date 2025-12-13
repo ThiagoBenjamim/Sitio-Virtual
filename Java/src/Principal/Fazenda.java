@@ -2,15 +2,15 @@ package Principal;
 
 public class Fazenda {
 	private String nome;
-	private int CNPJ;
-	private int CEP;
+	private String CNPJ;
+	private String CEP;
 	protected Proprietario proprietario;
 	protected Plantacao plantacoes[];
 	protected Criadouro criadouros[];
 	protected int indexPlantacoes;
 	protected int indexCriadouros;
 	
-	public Fazenda(String nome, int CEP, int CNPJ, Proprietario proprietario, Plantacao plantacoes[], Criadouro criadouros[]) {
+	public Fazenda(String nome, String CEP, String CNPJ, Proprietario proprietario, Plantacao plantacoes[], Criadouro criadouros[]) {
 		this.nome = nome;
 		this.CNPJ = CNPJ;
 		this.CEP = CEP;

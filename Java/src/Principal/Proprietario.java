@@ -2,10 +2,10 @@ package Principal;
 
 public class Proprietario {
 	private String nome;
-	private int CPF;
+	private String CPF;
 	private String[] tel;
 	
-	public Proprietario(String nome, int CPF, String[] tel) {
+	public Proprietario(String nome, String CPF, String[] tel) {
 		this.nome = nome;
 		this.CPF = CPF;
 		this.tel = tel;
